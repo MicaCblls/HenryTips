@@ -1,0 +1,168 @@
+{
+  "localidades": [
+    {
+      "id": 1,
+      "activo": 1,
+      "localidad": "Buenos Aires"
+    },
+    {
+      "id": 2,
+      "activo": 1,
+      "localidad": "Cordoba"
+    },
+    {
+      "id": 3,
+      "activo": 1,
+      "localidad": "Santa Fe"
+    }
+  ],
+  "departamentos": [
+    {
+      "id": 1,
+      "denominacion": "Quilmes",
+      "localidad_id": 1
+    },
+    {
+      "id": 2,
+      "denominacion": "Palermo",
+      "localidad_id": 1
+    },
+    {
+      "id": 3,
+      "denominacion": "La Capital",
+      "localidad_id": 3
+    },
+    {
+      "id": 4,
+      "denominacion": "Carlos Paz",
+      "localidad_id": 2
+    },
+    {
+      "id": 5,
+      "denominacion": "Villa Cabrera",
+      "localidad_id": 2
+    }
+  ],
+  "puestos": [
+    {
+      "id": 1,
+      "activo": 1,
+      "puesto": "Soporte"
+    },
+    {
+      "id": 2,
+      "activo": 1,
+      "puesto": "Recursos Humanos"
+    },
+    {
+      "id": 3,
+      "activo": 1,
+      "puesto": "Marketing"
+    },
+    {
+      "id": 4,
+      "activo": 1,
+      "puesto": "CEO"
+    },
+    {
+      "id": 5,
+      "activo": 1,
+      "puesto": "Programador"
+    },
+    {
+      "id": 6,
+      "activo": 1,
+      "puesto": "Analista"
+    }
+  ],
+  "empleados": [
+    {
+      "id": 1,
+      "apellido": "Camey",
+      "comision": 20,
+      "edad": 35,
+      "fechaalta": 2023,
+      "nombres": "Gamaliel",
+      "puesto_id": 2,
+      "departamento_id": 2,
+      "sueldo": "25000"
+    },
+    {
+      "id": 2,
+      "apellido": "Lavalle",
+      "comision": 15,
+      "edad": 23,
+      "fechaalta": 2023,
+      "nombres": "Gabriel",
+      "puesto_id": 1,
+      "departamento_id": 2,
+      "sueldo": "10000"
+    },
+    {
+      "id": 3,
+      "apellido": "Rosario",
+      "comision": 10,
+      "edad": 26,
+      "fechaalta": 2023,
+      "nombres": "Lucia",
+      "puesto_id": 1,
+      "departamento_id": 2,
+      "sueldo": "11500"
+    },
+    {
+      "id": 4,
+      "apellido": "Gonzalez",
+      "comision": 5,
+      "edad": 37,
+      "fechaalta": 2023,
+      "nombres": "Rocio",
+      "puesto_id": 1,
+      "departamento_id": 2,
+      "sueldo": "9500"
+    },
+    {
+      "id": 5,
+      "apellido": "Camey",
+      "comision": 22,
+      "edad": 33,
+      "fechaalta": 2023,
+      "nombres": "Luciano",
+      "puesto_id": 4,
+      "departamento_id": 2,
+      "sueldo": "2500"
+    },
+    {
+      "id": 6,
+      "apellido": "Rojas",
+      "comision": 2,
+      "edad": 30,
+      "fechaalta": 2023,
+      "nombres": "Mariano",
+      "puesto_id": 6,
+      "departamento_id": 2,
+      "sueldo": "12500"
+    },
+    {
+      "id": 7,
+      "apellido": "Castelli",
+      "comision": 15,
+      "edad": 22,
+      "fechaalta": 2023,
+      "nombres": "Julio",
+      "puesto_id": 5,
+      "departamento_id": 4,
+      "sueldo": "13000"
+    },
+    {
+      "id": 8,
+      "apellido": "Encina",
+      "comision": 10,
+      "edad": 27,
+      "fechaalta": 2023,
+      "nombres": "Ramiro",
+      "puesto_id": 4,
+      "departamento_id": 4,
+      "sueldo": "30000"
+    }
+  ]
+}

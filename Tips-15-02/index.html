@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henry Tips</title>
+  </head>
+  <body>
+    <script>
+      //Realizar un programa que ingrese los sueldos de 5 operarios en un vector. Realizar la creación y carga del vector en el constructor. Crear un método para imprimir el vector.
+
+      const load = (salary) => {
+        for (let i = 0; i < salary.length; i++) {
+          let value = prompt("Add salary:");
+          salary[i] = parseInt(value);
+        }
+      };
+      const print = (salary) => {
+        console.log(salary);
+        document.write(salary);
+      };
+
+      let salary = new Array(5);
+
+      load(salary);
+      print(salary);
+    </script>
+  </body>
+</html>
