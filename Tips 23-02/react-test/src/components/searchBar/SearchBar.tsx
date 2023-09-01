@@ -15,7 +15,7 @@ const SearchBar: FC<SearchBarProps> = ({ handleInputChange, searchString }) => {
       >
         <input
           type="text"
-          placeholder="Type here"
+          placeholder="Search..."
           className="focus:outline-none input input-bordered border-nav/70 w-full bg-white text-nav"
           value={searchString}
           onChange={handleInputChange}

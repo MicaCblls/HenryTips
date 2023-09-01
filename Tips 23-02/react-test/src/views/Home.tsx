@@ -17,6 +17,11 @@ const Home = () => {
     setSearchString(value.toLowerCase());
   };
 
+  const clearSearch = () => {
+    setFilteredProducts(products);
+    setSearchString("");
+  };
+
   useEffect(() => {
     setTimeout(async () => {
       const products: Product[] = await getProducts();
@@ -25,11 +30,8 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    console.log(searchString, "handle");
     const searchProducts = () => {
       if (debouncedSearchString?.length) {
-        console.log("entre", debouncedSearchString);
-
         const filteredProducts = [...products].filter((prod) =>
           prod.name.toLowerCase().includes(debouncedSearchString)
         );
@@ -40,8 +42,7 @@ const Home = () => {
           setFilteredProducts(products);
         }
       } else {
-        setSearchString("");
-        setFilteredProducts(products);
+        clearSearch();
       }
     };
     searchProducts();
@@ -53,7 +54,18 @@ const Home = () => {
         handleInputChange={handleInputChange}
         searchString={searchString}
       />
-
+      <div className="px-20 w-full">
+        {searchString.length > 0 && debouncedSearchString.length > 0 && (
+          <div className="rounded-md badge badge-info gap-2 bg-nav text-white">
+            {debouncedSearchString.toUpperCase()}
+            <button onClick={clearSearch}>X</button>
+          </div>
+        )}
+        <p className="text-lg uppercase font-medium">
+          {filteredProducts?.length ? filteredProducts.length : products.length}{" "}
+          Resultados
+        </p>
+      </div>
       <CardsList
         products={filteredProducts?.length > 0 ? filteredProducts : products}
       />
