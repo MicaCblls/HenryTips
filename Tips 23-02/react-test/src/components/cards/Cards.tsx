@@ -9,7 +9,7 @@ const Cards: FC<CardsProps> = ({ product }) => {
   const { name, code, price, image } = product;
 
   return (
-    <div className="card card-side shadow-xl bg-white max-w-md h-60">
+    <div className="card card-side shadow-xl bg-white max-w-xs md:max-w-md h-60">
       <figure className="h-60 w-60 ">
         <img
           src={image}

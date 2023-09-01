@@ -49,21 +49,14 @@ const Home = () => {
 
   return (
     <div className="flex flex-col justify-between bg-teal50">
-      <div className=" h-max py-4 flex justify-center items-center">
-        <SearchBar
-          handleInputChange={handleInputChange}
-          searchString={searchString}
-        />
-      </div>
-      <div
-        className={`flex justify-center ${
-          products.length > 0 ? "items-start" : "items-center"
-        }`}
-      >
-        <CardsList
-          products={filteredProducts?.length > 0 ? filteredProducts : products}
-        />
-      </div>
+      <SearchBar
+        handleInputChange={handleInputChange}
+        searchString={searchString}
+      />
+
+      <CardsList
+        products={filteredProducts?.length > 0 ? filteredProducts : products}
+      />
     </div>
   );
 };
