@@ -9,7 +9,7 @@ const Cards: FC<CardsProps> = ({ product }) => {
   const { name, code, price, image } = product;
 
   return (
-    <div className="card card-side shadow-xl bg-white max-w-xs md:max-w-md h-60 transition duration-300 ease-in-out hover:scale-110">
+    <div className="card card-side shadow-xl bg-white max-w-xs md:max-w-md h-60 transition duration-300 ease-in-out md:hover:scale-110">
       <figure className="h-60 w-60 ">
         <img
           src={image}

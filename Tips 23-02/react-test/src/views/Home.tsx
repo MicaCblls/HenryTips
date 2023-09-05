@@ -54,7 +54,7 @@ const Home = () => {
         handleInputChange={handleInputChange}
         searchString={searchString}
       />
-      <div className="px-20 w-full">
+      <div className="px-4 sm:px-12 md:px-20 w-full">
         {searchString.length > 0 && debouncedSearchString.length > 0 && (
           <div className="rounded-md badge badge-info gap-2 bg-nav text-white">
             {debouncedSearchString.toUpperCase()}
